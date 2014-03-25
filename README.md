@@ -5,6 +5,12 @@ A [Fabric Engine](http://www.fabricengine.com) extension which wraps [Sony Image
 
 This code is NOT supported by Fabric Software Inc. The code is released under the "New BSD" license and a copy can be found in the LICENSE file.
 
+
+Notes
+=
+pystring::split and pystring::splitlines haven't been implemented yet.
+
+
 Requirements
 =
 
