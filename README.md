@@ -8,7 +8,7 @@ This code is NOT supported by Fabric Software Inc. The code is released under th
 
 Notes
 =
-pystring::split and pystring::splitlines haven't been implemented yet.
+pystring::split, pystring::splitlines and os.path haven't been implemented yet.
 
 
 Requirements
