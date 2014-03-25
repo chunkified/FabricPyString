@@ -1,0 +1,32 @@
+//
+// Copyright (c) 2014, Nile Hylton <nile@chunkified.com> All rights reserved.
+//
+
+function String pys_capitalize(in String str) = "FabricPyString_capitalize";
+function String pys_center(in String str, in Integer width) = "FabricPyString_center";
+function Integer pys_count(in String str, in String substr) = "FabricPyString_count";
+function Boolean pys_endswith(in String str, in String suffix) = "FabricPyString_endswith";
+function String pys_expandtabs(in String str) = "FabricPyString_expandtabs";
+function String pys_find(in String str, in String substr) = "FabricPyString_find";
+function Boolean pys_isalpha(in String str) = "FabricPyString_isalpha";
+function Boolean pys_isdigit(in String str) = "FabricPyString_isdigit";
+function Boolean pys_islower(in String str) = "FabricPyString_islower";
+function Boolean pys_isspace(in String str) = "FabricPyString_isspace";
+function Boolean pys_istitle(in String str) = "FabricPyString_istitle";
+function String pys_ljust(in String str, in Integer width) = "FabricPyString_ljust";
+function String pys_lower(in String str) = "FabricPyString_lower";
+function String pys_lstrip(in String str, in String chars) = "FabricPyString_lstrip";
+function String pys_mul(in String str, in Integer n) = "FabricPyString_mul";
+function String pys_replace(in String str, in String oldstr, in String newstr) = "FabricPyString_replace";
+function Integer pys_rfind(in String str, in String sub) = "FabricPyString_rfind";
+function String pys_rjust(in String str, in Integer width) = "FabricPyString_rjust";
+function String pys_rstrip(in String str, in String chars) = "FabricPyString_rstrip";
+// function String[] pys_split(in String str, in String sep) = "FabricPyString_split"; // CURRENTLY DOES NOT WORK, CAUSES SEGMENTATION FAULT
+// function String[] pys_splitlines(in String str, in Boolean keepends) = "FabricPyString_splitlines"; // CURRENTLY DOES NOT WORK, CAUSES SEGMENTATION FAULT
+function Boolean pys_startswith(in String str, in String prefix) = "FabricPyString_startswith";
+function String pys_strip(in String str, in String chars) = "FabricPyString_strip";
+function String pys_swapcase(in String str) = "FabricPyString_swapcase";
+function String pys_title(in String str) = "FabricPyString_title";
+function String pys_upper(in String str) = "FabricPyString_upper";
+function String pys_zfill(in String str, in Integer width) = "FabricPyString_zfill";
+function String pys_slice(in String str, in Integer start, in Integer end) = "FabricPyString_slice";

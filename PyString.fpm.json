@@ -1,0 +1,8 @@
+{
+  "libs": [
+  	"FabricPyString"
+  ],
+  "code": [
+  	"PyString.kl"
+  ]
+}
