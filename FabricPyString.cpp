@@ -138,30 +138,35 @@ FABRIC_EXT_EXPORT KL::String FabricPyString_rstrip( const KL::String &str, const
 	return result;
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////
-/// TO DO: The below two functions haven't been implemented yet
-///
 
-/*
-FABRIC_EXT_EXPORT void FabricPyString_split( std::vector< KL::String > &kl,
+FABRIC_EXT_EXPORT void FabricPyString_split( KL::VariableArray< KL::String > &kl,
 		const KL::String &str, const KL::String &sep="" ) {
 
 	std::vector<std::string> stdResult;
 	pystring::split( str.c_str(), stdResult, sep.c_str() );
 
-}
-*/
+	std::string line;
+    for( unsigned int i = 0; i < stdResult.size(); i++ )
+    {
+    	line = stdResult[i];
+    	kl.push_back( line );
+    }
 
-/*
-FABRIC_EXT_EXPORT void FabricPyString_splitlines( std::vector< KL::String > &kl,
+}
+
+FABRIC_EXT_EXPORT void FabricPyString_splitlines( KL::VariableArray< KL::String > &kl,
 		const KL::String &str, const KL::Boolean keepends ) {
 
 	std::vector<std::string> stdResult;
 	pystring::splitlines( str.c_str(), stdResult, keepends );
 
+	std::string line;
+    for( unsigned int i = 0; i < stdResult.size(); i++ )
+    {
+    	line = stdResult[i];
+    	kl.push_back( line );
+    }
 }
-*/
-//////////////////////////////////////////////////////////////////////////////////////////////
 
 
 FABRIC_EXT_EXPORT KL::Boolean FabricPyString_startswith( const KL::String &str, const KL::String &prefix ) {
